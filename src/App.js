@@ -35,7 +35,7 @@ class App extends React.Component {
           <Header />
 
           {/* Main page */}
-          <Route exact path="/" render={props => (
+          <Route exact path="/react-attendance" render={props => (
             <React.Fragment>
               <table>
                 <tr>
@@ -62,7 +62,7 @@ class App extends React.Component {
                 {this.state.students.filter(student => student.present).length} students attended today's class
               </div>
 
-              <Link style={linkStyle} to="/">Back</Link>
+              <Link style={linkStyle} to="/react-attendance">Back</Link>
             </React.Fragment>
           )} />
         </React.Fragment>
